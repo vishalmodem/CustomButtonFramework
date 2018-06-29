@@ -13,4 +13,5 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/vishalmodem/CustomButtonFramework.git", :tag => "1.0.0" }
   s.source_files  = "CustomButtonFramework/**/*"
   s.swift_version = "4.1"
+  s.framework      = "UIKit"
 end

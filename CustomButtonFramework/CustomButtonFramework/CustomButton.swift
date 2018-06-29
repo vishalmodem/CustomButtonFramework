@@ -6,7 +6,6 @@
 //  Copyright © 2018 vishal modem. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 @IBDesignable
@@ -15,10 +14,12 @@ public class CustomButton: UIButton {
     public var radius : CGFloat = 10
      public var size: CGFloat = 16
    
-    override public func awakeFromNib() {
-        self.layer.cornerRadius = radius
-        self.titleLabel?.font = UIFont(name: "SFUIText-Regular", size: size)
+    override public func layoutSublayers(of layer: CALayer) {
+        super.layoutSublayers(of: layer)
+        layer.cornerRadius = radius
     }
-    
+    public override func prepareForInterfaceBuilder() {
+        titleLabel?.font = UIFont(name: "SFUIText-Regular", size: size)
+    }
     
 }
