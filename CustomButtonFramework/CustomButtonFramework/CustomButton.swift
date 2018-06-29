@@ -8,9 +8,9 @@
 
 import UIKit
 
-@IBDesignable
+
 public class CustomButton: UIButton {
-    @IBInspectable
+    
     public var radius : CGFloat = 10
      public var size: CGFloat = 16
    

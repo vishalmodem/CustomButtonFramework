@@ -9,9 +9,9 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/vishalmodem/CustomButtonFramework"
   s.license      = "MIT"
   s.author             = { "Pavan Rapala" => "pavan9198@gmail.com" }
-  # s.platform     = :ios, "11.4"
+  s.platform     = :ios, "11.4"
   s.source       = { :git => "https://github.com/vishalmodem/CustomButtonFramework.git", :tag => "1.0.0" }
   s.source_files  = "CustomButtonFramework/**/*"
   s.swift_version = "4.1"
-  s.framework      = "UIKit"
+  s.frameworks      = "UIKit"
 end
